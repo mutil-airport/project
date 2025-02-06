@@ -328,13 +328,13 @@
                         </div>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 研究结果表明，机场群进离场的交通流实现了时间上的重新分配，在各个时段更加平均，对各机场各个时间段的交通流起到了削峰填谷的作用，每个时段的流量基本在一个固定的范围内上下波动。 
+                                <p style="font-size: 20px;text-indent: 2em;"> 研究结果表明，机场群进离场的交通流实现了时间上的重新分配，在各个时段更加平均，对各机场各个时间段的交通流起到了削峰填谷的作用，每个时段的流量基本在一个固定的范围内上下波动。 
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <img src="images/1-2.png" alt="1-2" class="img-fluid" style="max-width: 80%; height: auto; margin-top: 20px;">
+                                <img src="images/1-2.png" alt="1-2" class="img-fluid" style="max-width: 60%; height: auto; margin-top: 20px;">
                             </div>
                         </div>
                     </div>
@@ -344,7 +344,7 @@
                         <h3>研究内容二 机场群稳健性公布容量确定方法</h3>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 机场公布容量决定了一个机场可供使用的时刻数量，机场群的公布容量是平衡群内机场和空域运行的结果。通过k-means的方法聚类得到机场运行的容量场景，以净价值最大化作为目标函数，考虑运行容量约束以及进离场航班对的约束，建立随机优化模型，确定机场每个时间段应创建的时刻数量，将其作为机场的公布容量，并选取广州白云机场进行实例验证，得到不同参数下的公布容量。研究成果为机场公布容量的确定提供了一个具体的计算方法和思路，对提高时刻利用率和减少航班延误有一定的贡献。
+                                <p style="font-size: 20px;text-indent: 2em;"> 机场公布容量决定了一个机场可供使用的时刻数量，机场群的公布容量是平衡群内机场和空域运行的结果。通过k-means的方法聚类得到机场运行的容量场景，以净价值最大化作为目标函数，考虑运行容量约束以及进离场航班对的约束，建立随机优化模型，确定机场每个时间段应创建的时刻数量，将其作为机场的公布容量，并选取广州白云机场进行实例验证，得到不同参数下的公布容量。研究成果为机场公布容量的确定提供了一个具体的计算方法和思路，对提高时刻利用率和减少航班延误有一定的贡献。
 提出了基于树形结构（Tree-structured）的机场公布容量确定方法。该方法在排队论模型的基础上，建立随机和动态规划模型和决策树，从而确定在适合的时段设置“防火墙”（firebreaks）来吸收航班累计延误。该方法为平衡机场容量利用率和航班运行效率提供了理论支持。同时，建立了包括LightGBM、XGBosst、随机森林和CatBoost四种机器学习模型，以评估预测航班时刻表在一个航季内的延误和取消情况，以此作为设置稳健性公布容量和时刻配置的关键环节。                               
                                 </p>
                             </div>
@@ -359,52 +359,52 @@
                         <h3>研究内容三 机场群时刻资源优化配置模型和算法</h3>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 机场群机场时刻协同优化分别以单机场、不同机场组合和机场群所有机场为优化对象，构建以最小化航班总偏移量和最小化最大单个航班偏移量的双目标航班时刻优化模型，借助Gurobi对模型进行求解。以粤港澳大湾区机场群航班时刻表为例进行了时刻优化，并通过AirTop对优化前后的时刻表进行仿真，对比了不同航班时刻表的延误。
+                                <p style="font-size: 20px;text-indent: 2em;"> 机场群机场时刻协同优化分别以单机场、不同机场组合和机场群所有机场为优化对象，构建以最小化航班总偏移量和最小化最大单个航班偏移量的双目标航班时刻优化模型，借助Gurobi对模型进行求解。以粤港澳大湾区机场群航班时刻表为例进行了时刻优化，并通过AirTop对优化前后的时刻表进行仿真，对比了不同航班时刻表的延误。
                                     
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <img src="images/1-5.png" alt="1-5" class="img-fluid" style="max-width: 80%; height: auto; margin-top: 20px;">
+                                <img src="images/1-5.png" alt="1-5" class="img-fluid" style="max-width: 60%; height: auto; margin-top: 20px;">
                             </div>
                         </div>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 结果表明，以大流量机场组合作为优化对象的策略，能在有限的航班时刻偏移情况下，使得机场群总体延误降低，但仍有部分机场延误未优化；当以所有机场为优化对象时，各机场延误均下降，但航班总延误降低较机场组合优化策略偏少，且各个机场航班时刻均需调整。
+                                <p style="font-size: 20px;text-indent: 2em;"> 结果表明，以大流量机场组合作为优化对象的策略，能在有限的航班时刻偏移情况下，使得机场群总体延误降低，但仍有部分机场延误未优化；当以所有机场为优化对象时，各机场延误均下降，但航班总延误降低较机场组合优化策略偏少，且各个机场航班时刻均需调整。
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <img src="images/1-6.png" alt="1-6" class="img-fluid" style="max-width: 80%; height: auto; margin-top: 20px;">
+                                <img src="images/1-6.png" alt="1-6" class="img-fluid" style="max-width: 60%; height: auto; margin-top: 20px;">
                             </div>
                         </div>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 考虑公平性的机场群航班时刻优化。综合考虑机场群运行特征、空域结构、航路点容量、航班时刻最大调整量、航班衔接需求以及离场点航班时刻分配的公平性的基础上，构建了基于高峰时刻需求的机场公平性指标和整体度量，兼顾了机场群内各成员机场的功能定位，最终建立了基于共用离场航路点高峰需求的机场群航班时刻分配公平性模型.
+                                <p style="font-size: 20px;text-indent: 2em;"> 考虑公平性的机场群航班时刻优化。综合考虑机场群运行特征、空域结构、航路点容量、航班时刻最大调整量、航班衔接需求以及离场点航班时刻分配的公平性的基础上，构建了基于高峰时刻需求的机场公平性指标和整体度量，兼顾了机场群内各成员机场的功能定位，最终建立了基于共用离场航路点高峰需求的机场群航班时刻分配公平性模型.
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <img src="images/1-7.png" alt="1-7" class="img-fluid" style="max-width: 80%; height: auto; margin-top: 20px;">
+                                <img src="images/1-7.png" alt="1-7" class="img-fluid" style="max-width: 60%; height: auto; margin-top: 20px;">
                             </div>
                         </div>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 并应用于现有的机场群实例，验证并扩展了该模型。得出以下结论：① 基于高峰需求的机场公平性与非基于需求的机场公平性方法相比，前者的时刻表总偏移和基尼机场公平性达到了更好的权衡；② 基于高峰需求的机场公平性方法更加关注高峰时段的航班，其设定的高峰请求比例原则对高峰航班请求敏感，会进一步权衡高峰请求数量和航班偏移的关系；③模型采用非基于需求的机场公平性方法，当考虑对各利益相关方绝对公平时，总偏移存在“突变”的极大值。
+                                <p style="font-size: 20px;text-indent: 2em;"> 并应用于现有的机场群实例，验证并扩展了该模型。得出以下结论：① 基于高峰需求的机场公平性与非基于需求的机场公平性方法相比，前者的时刻表总偏移和基尼机场公平性达到了更好的权衡；② 基于高峰需求的机场公平性方法更加关注高峰时段的航班，其设定的高峰请求比例原则对高峰航班请求敏感，会进一步权衡高峰请求数量和航班偏移的关系；③模型采用非基于需求的机场公平性方法，当考虑对各利益相关方绝对公平时，总偏移存在“突变”的极大值。
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <img src="images/1-8.png" alt="1-8" class="img-fluid" style="max-width: 80%; height: auto; margin-top: 20px;">
+                                <img src="images/1-8.png" alt="1-8" class="img-fluid" style="max-width: 60%; height: auto; margin-top: 20px;">
                             </div>
                         </div>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 机场群航班时刻鲁棒优化根据机场群的实际运行，识别其中影响战略时刻分配的不确定性因素。在机场群中，飞行时间不确定性影响某一时间窗内航路点的航班流量，进而影响航路点容量约束。在原有确定性模型基础上，将飞行时间不确定性建模融入机场群航班时刻分配模型之中，最终建立机场群航班时刻分配不确定性模型。建立了一个场景生成模型以实现对不确定性模型进行确定性转化，并以粤港澳大湾区机场群为例进行了验证。
+                                <p style="font-size: 20px;text-indent: 2em;"> 机场群航班时刻鲁棒优化根据机场群的实际运行，识别其中影响战略时刻分配的不确定性因素。在机场群中，飞行时间不确定性影响某一时间窗内航路点的航班流量，进而影响航路点容量约束。在原有确定性模型基础上，将飞行时间不确定性建模融入机场群航班时刻分配模型之中，最终建立机场群航班时刻分配不确定性模型。建立了一个场景生成模型以实现对不确定性模型进行确定性转化，并以粤港澳大湾区机场群为例进行了验证。
                                 </p>
                             </div>
                         </div>
@@ -414,13 +414,13 @@
 </div>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 实验结果表明，考虑飞行时间不确定性模型优化后的航班时刻表更具鲁棒性，在多种运行场景下均能满足容量约束，大大降低了空中交通拥堵和航班延误。
+                                <p style="font-size: 20px;text-indent: 2em;"> 实验结果表明，考虑飞行时间不确定性模型优化后的航班时刻表更具鲁棒性，在多种运行场景下均能满足容量约束，大大降低了空中交通拥堵和航班延误。
                                 </p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <img src="images/1-11.png" alt="1-11" class="img-fluid" style="max-width: 80%; height: auto; margin-top: 20px;">
+                                <img src="images/1-11.png" alt="1-11" class="img-fluid" style="max-width: 60%; height: auto; margin-top: 20px;">
                             </div>
                         </div>
                     </div>
@@ -429,7 +429,7 @@
                         <h3>研究内容四 时刻资源配置验证及原型系统开发</h3>
                         <div class="row clearfix">
                             <div class="col-md-12">
-                                <p> 建立面向机场群运行管理需求的数据结构模型，研究评价机场群运行的多维度指标体系和评价方法，选取典型机场群开展时刻资源优化配置的平行验证，构建机场群航班时刻资源管理原型系统，实现对机场群航班时刻资源的精细管理与高效利用。
+                                <p style="font-size: 20px;text-indent: 2em;"> 建立面向机场群运行管理需求的数据结构模型，研究评价机场群运行的多维度指标体系和评价方法，选取典型机场群开展时刻资源优化配置的平行验证，构建机场群航班时刻资源管理原型系统，实现对机场群航班时刻资源的精细管理与高效利用。
                                     
                                 </p>
                             </div>
