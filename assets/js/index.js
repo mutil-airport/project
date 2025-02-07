@@ -40,7 +40,7 @@ function toggleMenu() {
 }
 function showSection(sectionId) {
     // Hide all sections
-    var sections = ['about-section', 'teaching-section', 'publications-section', 'projects-section', 'team-section'];
+    var sections = ['about-section', 'teaching-section', 'publications-section', 'projects-section', 'technique-section','team-section'];
     sections.forEach(function (id) {
         document.getElementById(id).style.display = 'none';
     });
